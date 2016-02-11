@@ -1,0 +1,14 @@
+/**
+ * Created by ${USER} on ${DATE}.
+ */
+/// <reference path="./${NAME}.controller.ts" />
+/// <reference path="./${NAME}.directive.ts" />
+/// <reference path="./${NAME}.filter.ts" />
+/// <reference path="./${NAME}.service.ts" />
+module ${PROJECT_NAME}.${NAME} {
+    angular.module("${NAME}.module", [])
+    .controller("${NAME}Controller", app.controllers.AngularController)
+    .directive("${NAME}Directive", app.directives.AngularDirective.Factory())
+    .service("${NAME}Service", app.services.AngularService)
+    .filter("${NAME}Filter", app.filters.AngularFilter);
+}
