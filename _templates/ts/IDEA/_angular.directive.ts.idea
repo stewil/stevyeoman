@@ -10,10 +10,10 @@ module ${PROJECT_NAME}.${NAME}.directives {
         public controller   : string = "";
         public controllerAs : string = "";
         public templateUrl  : string = "";
-        public scope        : any = {};
+        public scope        : any    = {};
 
         public static Factory(){
-            var directive = (${DS}rootScope} : angular.IRootScopeService) =>
+            var directive = (${DS}rootScope : angular.IRootScopeService) =>
                 new AngularDirective(${DS}rootScope);
 
             directive.${DS}inject = ["${DS}rootScope"];

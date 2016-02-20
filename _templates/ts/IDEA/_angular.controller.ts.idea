@@ -5,7 +5,7 @@ module ${PROJECT_NAME}.${NAME}.controllers {
     "use strict";
 
     export class ${NAME}Controller{
-        static ${DS}inject} = ["${DS}scope"];
+        static ${DS}inject = ["${DS}scope"];
         constructor(private ${DS}scope : angular.IScope){
 
         }
