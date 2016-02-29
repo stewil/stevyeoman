@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+(function () {
+    "use strict";
+    angular
+        .module("${1:new}.module")
+        .directive("${1}Controller", ${1}Controller);
+
+    ${1}Controller.\$inject = ["\$scope"];
+
+    function ${1}Controller(\$scope) {
+        var vm = this;
+    }
+})();
+]]></content>
+    <tabTrigger>angularController</tabTrigger>
+    <scope>source.js</scope>
+</snippet>

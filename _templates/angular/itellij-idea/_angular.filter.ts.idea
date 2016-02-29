@@ -1,0 +1,12 @@
+/**
+ * Created by ${USER} on ${DATE}.
+*/
+module ${PROJECT_NAME}.${NAME}.filters {
+    "use strict"
+
+    export function ${NAME}Filter(){
+        return (input:any, type:string)=>{
+            return input ? true : false;
+        }
+    }
+}

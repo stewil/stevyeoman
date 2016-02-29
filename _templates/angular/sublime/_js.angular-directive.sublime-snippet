@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+(function() {
+    "use strict";
+
+    angular
+        .module("${1:new}.module")
+        .directive("${1}Directive", ${1}Directive);
+
+    ${1}Directive.\$inject = [];
+
+    function ${1}Directive() {
+        var directive = {
+            link     : link,
+            restrict : "EA"
+        };
+
+        return directive;
+
+        function link(\$scope, \$element, \$attrs) {
+        }
+    }
+})();
+]]></content>
+    <tabTrigger>angularDirective</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
