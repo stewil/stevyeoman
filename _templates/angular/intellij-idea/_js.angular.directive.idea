@@ -1,0 +1,24 @@
+/**
+ * Created by ${USER} on ${DATE}.
+ */
+(function() {
+    "use strict";
+
+    angular
+        .module("${NAME}.module")
+        .directive("${NAME}Directive", ${NAME}Directive);
+
+    ${NAME}Directive.${DS}$inject = [];
+
+    function ${NAME}Directive() {
+        var directive = {
+            link     : link,
+            restrict : "EA"
+        };
+
+        return directive;
+
+        function link(${DS}scope, ${DS}element, ${DS}attrs) {
+        }
+    }
+})();

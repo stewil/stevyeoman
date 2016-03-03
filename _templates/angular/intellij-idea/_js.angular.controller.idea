@@ -1,0 +1,15 @@
+/**
+ * Created by ${USER} on ${DATE}.
+ */
+(function () {
+    "use strict";
+    angular
+        .module("${NAME}.module")
+        .directive("${NAME}Controller", ${NAME}Controller);
+
+    ${NAME}Controller.${DS}inject = ["${DS}scope"];
+
+    function ${NAME}Controller(${DS}scope) {
+        var vm = this;
+    }
+})();
