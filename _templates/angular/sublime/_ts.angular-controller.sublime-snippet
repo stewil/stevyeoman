@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+module ${1:New}.controllers {
+    "use strict";
+
+    export class ${2:New}Controller{
+        static \$inject = ["\$scope"];
+        constructor(private \$scope : angular.IScope){
+
+        }
+    }
+}
+]]></content>
+    <tabTrigger>angularController</tabTrigger>
+    <scope>source.ts</scope>
+</snippet>

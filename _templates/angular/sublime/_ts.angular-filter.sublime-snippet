@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+module ${1:New}.filters {
+    "use strict";
+
+    ${2:New}Filter.\$inject = [];
+
+    export function ${2}Filter(){
+        return function(input:any, args:any){
+            return true;
+        }
+    }
+}
+]]></content>
+    <tabTrigger>angularFilter</tabTrigger>
+    <scope>source.ts</scope>
+</snippet>

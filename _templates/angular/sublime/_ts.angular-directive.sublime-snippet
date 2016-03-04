@@ -1,0 +1,33 @@
+<snippet>
+    <content><![CDATA[
+module ${1:New}.directives {
+    "use strict";
+
+    export class ${2:New}Directive implements angular.IDirective{
+
+        public restrict     : string = "EA";
+        public controller   : string = "";
+        public controllerAs : string = "";
+        public templateUrl  : string = "";
+        public scope        : any = {};
+
+        public static Factory(){
+            var directive = (\$rootScope : angular.IRootScopeService) =>
+                new ${2}Directive(\$rootScope);
+
+            directive.\$inject = ["\$rootScope"];
+            return directive;
+        }
+
+        constructor(private \$rootScope  : angular.IRootScopeService){}
+
+        link = (\$scope   : angular.IScope,
+                \$element : angular.IAugmentedJQuery,
+                \$attrs   : angular.IAttributes)=>{
+        };
+    }
+}
+]]></content>
+    <tabTrigger>angularDirective</tabTrigger>
+    <scope>source.ts</scope>
+</snippet>

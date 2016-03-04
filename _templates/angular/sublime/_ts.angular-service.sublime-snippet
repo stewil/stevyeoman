@@ -1,0 +1,19 @@
+<snippet>
+    <content><![CDATA[
+module ${1:New}.services {
+    "use strict";
+
+    export interface I${2:New}Service{}
+
+    export class ${2}Service implements I${2}Service{
+
+        public static \$inject = ["\$rootScope"];
+
+        constructor(private \$rootScope:angular.IRootScopeService){
+        }
+    }
+}
+]]></content>
+    <tabTrigger>angularService</tabTrigger>
+    <scope>source.ts</scope>
+</snippet>

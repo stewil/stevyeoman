@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+/// <reference path="./controllers/${3:${2}}.controller.ts" />
+/// <reference path="./directives/${3}.directive.ts" />
+/// <reference path="./services/${3}.service.ts" />
+/// <reference path="./filters/${3}.filter.ts" />
+
+module ${1:New}.module {
+    angular.module("${2:New}.module", [])
+        .controller("${2}Controller", controllers.${2}Controller)
+        .directive("${2}Directive", directives.${2}Directive.Factory())
+        .service("${2}Service", services.${2}Service)
+        .filter("${2}Filter", filters.${2}Filter);
+}
+]]></content>
+    <tabTrigger>angularModule</tabTrigger>
+    <scope>source.ts</scope>
+</snippet>
